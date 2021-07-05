@@ -2,4 +2,5 @@
 --langmap=proto:.proto
 --regex-proto=/^[ \t]*message[ \t]+([a-zA-Z0-9_]+)/\1/m,message/
 --regex-proto=/^[ \t]*enum[ \t]+([a-zA-Z0-9_]+)/\1/e,enum/
---regex-proto=/^[ \t]*(optional|required|repeated)[ \t]+([a-zA-Z0-9_]+)[ \t]+([a-zA-Z0-9_]+)/\3/v,variable/
+--regex-proto=/^[ \t]*service[ \t]+([a-zA-Z0-9_]+)/\1/S,service/
+--regex-proto=/^[ \t]*rpc[ \t]+([a-zA-Z0-9_]+)/\1/r,rpc/

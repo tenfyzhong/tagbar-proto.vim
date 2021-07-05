@@ -15,9 +15,13 @@ endif
 let g:tagbar_type_proto = {
             \ 'ctagstype': 'proto',
             \ 'kinds': [
-            \ 'm:message:0:1',
             \ 'e:enum:0:1',
+            \ 'm:message:0:1',
+            \ 'S:service:0:1',
+            \ 'r:rpc:0:1',
             \ ],
             \ 'sro': '.',
+            \ 'kind2scope': {'S': 'service',},
+            \ 'scope2kind': {'service': 'S',},
             \ 'deffile': cnf,
             \}
